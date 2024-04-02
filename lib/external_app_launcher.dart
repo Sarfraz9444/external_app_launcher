@@ -28,7 +28,7 @@ class LaunchApp {
       String? androidPackageName,
       String? appStoreLink,
       bool? openStore,
-      String? data}) async {
+      List<String>? data}) async {
     String? packageName = Platform.isIOS ? iosUrlScheme : androidPackageName;
     String packageVariableName =
         Platform.isIOS ? 'iosUrlScheme' : 'androidPackageName';
